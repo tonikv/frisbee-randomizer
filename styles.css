@@ -9,8 +9,9 @@ body {
 }
 
 .container {
-    padding: 0 20px 0 20px;
+    padding: 0 5px 0 5px;
     border: 2px solid black;
+    min-width: 300px;
 }
 
 .header {
