@@ -11,13 +11,45 @@ body {
 .container {
     padding: 0 5px 0 5px;
     border: 2px solid black;
+    border-radius: 7px;
     min-width: 300px;
 }
 
 .header {
+    font-style: italic;
     display: block;
+    padding: 0px;
+}
+
+.center {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .shots {
     list-style-type: none;
+    line-height: 5px;
+}
+
+.btn {
+    padding: 5px 10px 5px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.btn:hover {
+    opacity: 70%;
+}
+
+.next_btn {
+    background-color: green;
+    color: white;
+}
+
+.clear_btn {
+    background-color: rgb(128, 0, 0);
+    color: white;
 }

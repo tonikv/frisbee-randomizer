@@ -10,7 +10,7 @@ const btnNext = document.querySelector('#next');
 const btnClear = document.querySelector('#clear');
 const ulElm = document.querySelector('#throws');
 
-btnNext.innerText = "Next";
+btnNext.innerText = "Next ";
 btnNext.addEventListener("click", setRandomThrow)
 
 btnClear.innerText = "Clear";
@@ -30,13 +30,13 @@ function setRandomThrow(event) {
     const rndStyle = `${styles.sample()}` 
     const rndDisc = `${discs.sample()}`
     
-    let h3Elm = document.createElement('h3');
-    h3Elm.innerText = `Shot ${throwCount}:`
+    let h4Elm = document.createElement('h4');
+    h4Elm.innerText = `Shot ${throwCount}:`
 
     let liStyle = document.createElement('li');
     liStyle.setAttribute('class', 'item');
     liStyle.appendChild(document.createTextNode(`${rndStyle} with ${rndDisc}`));
 
-    ulElm.appendChild(h3Elm);
+    ulElm.appendChild(h4Elm);
     ulElm.appendChild(liStyle);
 }
