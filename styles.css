@@ -12,7 +12,7 @@ body {
     padding: 0 5px 0 5px;
     border: 2px solid black;
     border-radius: 7px;
-    min-width: 300px;
+    max-width: 320px;
 }
 
 .header {
