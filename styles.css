@@ -11,11 +11,10 @@ body {
 
 .container {
     margin-top: 10px;
-    padding: 0 5px 0 5px;
+    padding: 0px 25px 0px 25px;
     border: 1px solid black;
     border-radius: 7px;
     box-shadow: 4px 4px rgb(19, 18, 18);
-
     max-width: 320px;
 }
 
@@ -29,10 +28,6 @@ body {
     font-size:medium;
 }
 
-#throws {
-    padding: 0;
-}
-
 .center {
     padding: 0px;
     display: flex;
@@ -43,6 +38,7 @@ body {
 .shots {
     list-style-type: none;
     line-height: 5px;
+    padding: 0;
 }
 
 .btn {

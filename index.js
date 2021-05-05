@@ -4,16 +4,14 @@ Array.prototype.sample = function() {
 
 const styles = ['Flat', 'Anhyzer', 'Hyzer', 'Backhand', 'Forehand', 'Overhand'];
 const discs = ['Putter', 'Midrange', 'Fairway driver', 'Distance driver'];
-let throwCount = 0;
-
 const btnNext = document.querySelector('#next');
 const btnClear = document.querySelector('#clear');
 const ulElm = document.querySelector('#throws');
+let throwCount = 0;
 
 btnNext.innerText = "Next ";
-btnNext.addEventListener("click", setRandomThrow)
-
 btnClear.innerText = "Clear";
+btnNext.addEventListener("click", setRandomThrow)
 btnClear.addEventListener("click", clearThrows)
 
 function clearThrows(event) {
@@ -34,7 +32,6 @@ function setRandomThrow(event) {
     h4Elm.innerText = `Shot ${throwCount}:`
 
     let liStyle = document.createElement('li');
-    liStyle.setAttribute('class', 'item');
     liStyle.appendChild(document.createTextNode(`${rndStyle} with ${rndDisc}`));
 
     ulElm.appendChild(h4Elm);
